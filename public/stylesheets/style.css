@@ -1,0 +1,255 @@
+:root {
+    --primary-color: #4e3300;
+    --secondary-color: #f0f0f0;
+    --tertiary-color: #d3ffcb;
+    --dark-color: #aaaaaa;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #f8f8f8;
+    background-color: #f8f8f8;
+  }
+  
+  .card-header {
+      background-color: var(--primary-color);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+
+  .card-content {
+      background-color: var(--tertiary-color);
+      border: 3px solid var(--primary-color);
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  button {
+    border: 0;
+    padding: 1%;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .post-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  textarea, input {
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-color); 
+  }
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
+  }
+  
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+  
+  form > div {
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+  }
+
+  .heading {
+    font-size: 20px;
+    color: var(--primary-color);
+    background-color:  var(--tertiary-color);
+    box-shadow: 3px 3px var(--dark-color);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--tertiary-color);
+   
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+  }
+
+  .home-title {
+      background-color: var(--primary-color);
+      color: var(--tertiary-color);
+      padding: 10px;
+      margin: 10px;
+      margin-bottom: 0;
+      border-radius: 15px;
+  }
+
+  .home-title:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+  }
+  
+  main {
+    flex: 1;
+    padding: 2% 4%;
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
+  
+  .btn-no-style:hover {
+    background: none;
+    color: var(--secondary-color);
+  }
+  
+  .delete-post-btn {
+    background-color: #d41414;
+  }
+  
+  .delete-post-btn:hover {
+    background-color: #ff643d;
+  }
+  
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+  }
+  
+  .post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: var(--dark-color);
+  }
+
+  .title,
+  .login-form {
+    text-align: center;
+ }
+
+ .btn {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ .sign-btn {
+     margin-left: 10rem;
+     background-color: var(--primary-color);
+     color: var(--tertiary-color);
+     border-radius: 15px;
+ }
+
+ .sign-btn:hover {
+    background-color: #6d4700;
+    color: var(--tertiary-color);
+    border: none;
+ }
+
+ .login-btn {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    border: none;
+ }
+
+ .login-btn:hover {
+    background-color: #c2ffb7;
+ }
+
+  .title h2 {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+  }
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
+  
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .comment:nth-child(odd) {
+    background-color: var(--primary-color);
+  }
+  
+  .comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+  }
+  
+  .edit-post-form {
+    margin-bottom: 5%;
+  }
+
+  #password-login,
+  #email-login {
+      text-align: center;
+  }
+  
+  footer {
+    border-top: 3px solid var(--dark-color);
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }
+
+  .card {
+      margin-bottom: 1em;
+      margin-top: 1em;
+  }
+
+  .rows {
+      display:flex;
+      flex-direction: column;
+  }
