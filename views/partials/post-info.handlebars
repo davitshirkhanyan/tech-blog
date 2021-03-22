@@ -13,7 +13,7 @@
         <div class="content has-text-justified">
             {{post_content}}
         </div>
-            <div class="is-pulled-right">
+            <div class="is-pulled-right user-content">
                 <b>{{user.username}}</b> | 
                  | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
             </div>

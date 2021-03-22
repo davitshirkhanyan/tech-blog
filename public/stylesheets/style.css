@@ -14,7 +14,6 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #f8f8f8;
     background-color: #f8f8f8;
   }
   
@@ -28,15 +27,15 @@
       background-color: var(--tertiary-color);
       border: 3px solid var(--primary-color);
   }
+
+  .user-content {
+      color: var(--primary-color);
+  }
   
   a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
-  }
-  
-  a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   
   button {
@@ -57,11 +56,6 @@
     padding: 10px 50px;
     border-radius: 10px;
     border: 1px solid var(--dark-color); 
-  }
-  
-  textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
   }
   
   textarea {
@@ -94,7 +88,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
    
   }
   
@@ -107,12 +101,15 @@
     color: var(--tertiary-color);
   }
 
+  nav {
+      justify-content: space-between;
+  }
+
   .home-title {
       background-color: var(--primary-color);
       color: var(--tertiary-color);
-      padding: 10px;
-      margin: 10px;
       margin-bottom: 0;
+      padding: 10px;
       border-radius: 15px;
   }
 
@@ -144,12 +141,17 @@
     color: var(--secondary-color);
   }
   
-  .delete-post-btn {
-    background-color: #d41414;
+  .delete-post-btn,
+  .logout-btn {
+    background-color: #ff0000;
+    border-radius: 15px;
+    color: var(--secondary-color);
+    border: none;
   }
   
-  .delete-post-btn:hover {
-    background-color: #ff643d;
+  .delete-post-btn:hover,
+  .logout-btn:hover {
+    background-color: #f5603b;
   }
   
   .post {
@@ -164,7 +166,8 @@
   }
 
   .title,
-  .login-form {
+  .login-form,
+  .signup-form {
     text-align: center;
  }
 
@@ -187,6 +190,18 @@
     border: none;
  }
 
+ .signup-btn {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 15px;
+}
+
+.signup-btn:hover {
+    background-color: #6d4700;
+    color: var(--tertiary-color);
+    border: none;
+ }
+
  .login-btn {
     background-color: var(--tertiary-color);
     color: var(--primary-color);
@@ -196,6 +211,24 @@
 
  .login-btn:hover {
     background-color: #c2ffb7;
+ }
+
+ .btn-comment {
+     border-radius: 15px;
+     background-color: #f6b948;
+     margin-top: 15px;
+ }
+
+ .btn-comment:hover {
+     background-color: #9c7f48;
+     color: var(--secondary-color);
+ }
+
+ .dash-post {
+     font-weight: bold;
+     font-size: 20px;
+     text-align: center;
+     margin-top: 10px;
  }
 
   .title h2 {
@@ -214,11 +247,20 @@
   
   .comment {
     padding: 1%;
-    margin-bottom: 1%;
+  }
+
+  .comments {
+    margin-top: 1%;
   }
   
   .comment:nth-child(odd) {
     background-color: var(--primary-color);
+    color: var(--tertiary-color);
+  }
+
+  .comment:nth-child(even) {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
   }
   
   .comment .meta {
@@ -232,7 +274,10 @@
   }
 
   #password-login,
-  #email-login {
+  #email-login,
+  #username-signup,
+  #email-signup,
+  #password-signup {
       text-align: center;
   }
   
@@ -245,11 +290,5 @@
   }
 
   .card {
-      margin-bottom: 1em;
-      margin-top: 1em;
-  }
-
-  .rows {
-      display:flex;
-      flex-direction: column;
+      margin-top: 5em;
   }
